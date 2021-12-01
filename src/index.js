@@ -6,7 +6,6 @@ const AccountAPI = require('./dataSources/account_api')
 const Authentication = require('./utils/authentication')
 
 const server = new ApolloServer({
-    cors: false,
     context: Authentication,
     typeDefs,
     resolvers,
